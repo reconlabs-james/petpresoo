@@ -1,3 +1,5 @@
+import { AutoSlidingGallery } from "./AutuSlidingGallery"
+
 export const MainAutoSlidingGallery = () => {
 
   return (
@@ -6,7 +8,7 @@ export const MainAutoSlidingGallery = () => {
         최근 생성된 프로필 갤러리
       </h2>
       <div className="overflow-hidden rounded-lg shadow-md relative">
-        slice
+        <AutoSlidingGallery />
       </div>
     </section>
   )
