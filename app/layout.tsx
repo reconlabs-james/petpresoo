@@ -1,14 +1,14 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "MoveMoji - 나만의 이모티콘 서비스",
+  title: "PetPresso - 나만의 이모티콘 서비스",
   description: "나만의 반려동물 이모티콘을 사진 한장으로 만들어 보세요!",
   openGraph: {
     title: "MoveMoji - 나만의 이모티콘 서비스",
@@ -30,7 +30,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className="scroll-smooth">
+    <html lang="ko">
+      <head>
+        <link href="https://fonts.cdnfonts.com/css/cherry-bomb-one" rel="stylesheet" />
+      </head>
       <body
         className={`${inter.className} antialiased`}
       >
