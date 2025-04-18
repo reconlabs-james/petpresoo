@@ -1,0 +1,23 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/src/**": true
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+  }
+}
