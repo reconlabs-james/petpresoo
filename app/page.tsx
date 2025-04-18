@@ -1,14 +1,16 @@
 import { Footer } from "@/components/common/footer";
+import Header from "@/components/common/header";
 import { EmojiGallery } from "@/components/emoji-gallery";
 import { FeaturesSection } from "@/components/features-section";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { PetForm } from "@/components/pet-form";
-import Image from 'next/image'
+import Image from 'next/image';
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
+      <Header />
       <section className="relative w-full h-[880px] md:h-screen bg-cover bg-center flex items-center justify-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
@@ -33,9 +35,9 @@ export default function Home() {
       <section className="bg-gradient-to-b from-[#E2F3F1] to-[#E2F3F1] w-full py-8 md:py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-black mb-8 md:text-lg text-center hidden md:block">
-            <strong>MOVEMOJI</strong>는 생성형 AI 기반 움직이는 이모티콘 <br/>
-          자동 생성 웹서비스 입니다. 간단한 사진 업로드만으로<br/>
-          별도의 애니메이션 작업 없이 손쉽게 <br/>움직이는 이모티콘을 만들 수 있습니다.
+            <strong>MOVEMOJI</strong>는 생성형 AI 기반 움직이는 이모티콘 <br />
+            자동 생성 웹서비스 입니다. 간단한 사진 업로드만으로<br />
+            별도의 애니메이션 작업 없이 손쉽게 <br />움직이는 이모티콘을 만들 수 있습니다.
           </p>
 
           <div className="flex flex-row items-center justify-center md:gap-8 mb-12">
@@ -67,7 +69,7 @@ export default function Home() {
         <div className="flex items-center justify-center gap-4 mb-4">
           <div className="relative px-8 py-6 md:px-12 md:py-8 bg-gray-100 rounded-full shadow-md border-2 border-gray-300 max-w-sm md:max-w-md">
             <p className="text-center text-2xl md:text-4xl font-bold text-blue-800">
-              <span className="text-blue-900">MoveMoji</span>를 가장 먼저 <br className="hidden md:block"/> 무료로 이용해보세요!
+              <span className="text-blue-900">MoveMoji</span>를 가장 먼저 <br className="hidden md:block" /> 무료로 이용해보세요!
             </p>
             <div className="absolute inset-0 rounded-full border border-gray-400 opacity-50"></div>
           </div>
@@ -97,9 +99,9 @@ export default function Home() {
           <span className="text-2xl text-gray-500">✨</span>
         </div>
         <p className="text-center text-gray-700 max-w-2xl mx-auto mb-8">
-        내 반려동물이 귀여운 움직이는 이모티콘으로 변신!
+          내 반려동물이 귀여운 움직이는 이모티콘으로 변신!
           <br />
-        사진을 업로드하면 AI가 자동으로 애니메이션을 만들어줘요.
+          사진을 업로드하면 AI가 자동으로 애니메이션을 만들어줘요.
         </p>
         <EmojiGallery />
       </section>
