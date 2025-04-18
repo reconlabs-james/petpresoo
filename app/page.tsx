@@ -1,3 +1,4 @@
+import { MainContent } from "@/components/_home/MainContent";
 import { Footer } from "@/components/common/footer";
 import Header from "@/components/common/header";
 import { EmojiGallery } from "@/components/emoji-gallery";
@@ -11,26 +12,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <section className="relative w-full h-[880px] md:h-screen bg-cover bg-center flex items-center justify-center">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/main/web_main_img.webp"
-            alt="MoveMoji background with dog"
-            fill
-            className="object-cover object-left hidden md:block"
-            priority
-          />
-          <Image
-            src="/main/mobile_main_img.jpg"
-            alt="MoveMoji background with dog mobile"
-            fill
-            className="w-full h-full object-cover md:hidden"
-            priority
-          />
-        </div>
-      </section>
-
+      <MainContent />
       {/* Description Section */}
       <section className="bg-gradient-to-b from-[#E2F3F1] to-[#E2F3F1] w-full py-8 md:py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
