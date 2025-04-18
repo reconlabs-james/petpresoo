@@ -1,13 +1,19 @@
 import Image from 'next/image';
 
-export const EnhancedPhoto = () => {
+interface Props {
+  activeStyle: number | null;
+  setActiveStyle: (style: number | null) => void;
+}
+
+export const EnhancedPhoto = ({ activeStyle, setActiveStyle }: Props) => {
   return (
     <section className="mb-6 md:mb-8">
       <div className="grid grid-cols-3 gap-3 sm:gap-4 md:gap-8">
         {/* Style 1 - 꽃단장 프로필 */}
         <div
-          className={`flex flex-col items-center "scale-105 transition-transform"
-            }`}
+          className={`flex flex-col items-center ${activeStyle === 1 ? "scale-105 transition-transform" : ""}`}
+          onMouseEnter={() => setActiveStyle(1)}
+          onMouseLeave={() => setActiveStyle(null)}
         >
           <div className="relative w-full max-w-[120px] sm:max-w-[144px] md:max-w-full mx-auto">
             {/* Decorative frame */}
@@ -37,7 +43,9 @@ export const EnhancedPhoto = () => {
 
         {/* Style 2 - 지브리 스타일 */}
         <div
-          className={`flex flex-col items-center "scale-105 transition-transform"`}
+          className={`flex flex-col items-center ${activeStyle === 2 ? "scale-105 transition-transform" : ""}`}
+          onMouseEnter={() => setActiveStyle(2)}
+          onMouseLeave={() => setActiveStyle(null)}
         >
           <div className="relative w-full max-w-[120px] sm:max-w-[144px] md:max-w-full mx-auto">
             {/* Decorative frame */}
@@ -48,7 +56,7 @@ export const EnhancedPhoto = () => {
               <div className="w-full h-full overflow-hidden">
                 <Image
                   src="/asserts/지브리.png"
-                  alt="지브리 스타일 예시"
+                  alt="꽃단장 프로필 예시"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-110"
                 />
@@ -65,10 +73,11 @@ export const EnhancedPhoto = () => {
           </div>
         </div>
 
-        {/* Style 3 - 야구 */}
+        {/* Style 3 - 야구 - 이미지 변경 */}
         <div
-          className={`flex flex-col items-center scale-105 transition-transform`}
-
+          className={`flex flex-col items-center ${activeStyle === 3 ? "scale-105 transition-transform" : ""}`}
+          onMouseEnter={() => setActiveStyle(3)}
+          onMouseLeave={() => setActiveStyle(null)}
         >
           <div className="relative w-full max-w-[120px] sm:max-w-[144px] md:max-w-full mx-auto">
             {/* Decorative frame */}
@@ -78,8 +87,8 @@ export const EnhancedPhoto = () => {
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-lg border-2 border-blue-200 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
               <div className="w-full h-full overflow-hidden">
                 <Image
-                  src="/asserts/야구.png"
-                  alt="야구 스타일 예시"
+                  src="/asserts/야구.png"
+                  alt="꽃단장 프로필 예시"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-110"
                 />
@@ -92,7 +101,7 @@ export const EnhancedPhoto = () => {
             <p className="font-bold text-xs sm:text-sm md:text-base bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
               야구
             </p>
-            <p className="text-[10px] md:text-xs text-blue-500 mt-0.5">*응원 팀 정보 받아야함</p>
+            <p className="text-[10px] md:text-xs text-blue-500 mt-0.5">*응원 팀 정보 필요</p>
           </div>
         </div>
       </div>
