@@ -1,8 +1,11 @@
 
+import { useAuthStore } from "@/store/AuthStore";
 import { PawPrint, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { LoginModal } from "../_auth/KakaoLoginModal";
 
 const Header = () => {
+  const { isLoggedIn, storeLogout } = useAuthStore();
 
   return (
     <>
@@ -33,28 +36,27 @@ const Header = () => {
                 <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-sky-400 group-hover:w-4/5 transition-all duration-300"></div>
               </Link>
             </div>
-
-            {/* Mobile Menu Button - 메뉴 내용 없어짐 */}
-            {/* <div className="md:hidden">
-              <Button variant="ghost" size="icon" onClick={toggleMobileMenu} className="text-purple-700">
-                {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </Button>
-            </div> */}
-
-            {/* Desktop Navigation */}
-            {/* <div className="hidden md:flex items-center gap-4">
+            <div className="flex flex-direction:row gap-4">
               {isLoggedIn ? (
-                <Button
-                  variant="ghost"
-                  className="text-sm md:text-base font-medium text-sky-700 hover:text-purple-900 hover:bg-purple-50"
-                  onClick={handleLogout}
-                >
-                  로그아웃
-                </Button>
+                <nav>
+                  <ul className="flex gap-4">
+                    <li>
+                      <Link href="/">
+                        <button onClick={storeLogout}>로그 아웃</button>
+                      </Link>
+                    </li>
+                  </ul>
+                </nav>
               ) : (
-                <KakaoLoginModal onLogin={handleLogin} />
+                <nav>
+                  <ul className="flex gap-4">
+                    <li>
+                      <LoginModal />
+                    </li>
+                  </ul>
+                </nav>
               )}
-            </div> */}
+            </div>
           </div>
         </nav>
       </header>

@@ -1,3 +1,5 @@
+"use server";
+
 import axios from "axios";
 
 interface LoginResponse {
@@ -46,6 +48,8 @@ export const login = async (payload: string): Promise<LoginResponse> => {
       'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
     },
   });
+
+  console.log(res)
 
   return {
     accessToken: res.data.access_token,

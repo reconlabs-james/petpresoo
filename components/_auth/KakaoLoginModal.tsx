@@ -14,6 +14,7 @@ interface LoginModalProps {
 }
 
 export function LoginModal({ open: controlledOpen, onOpenChange, onSignupComplete }: LoginModalProps) {
+  console.log(controlledOpen)
   const [internalOpen, setInternalOpen] = useState(false);
   const [step, setStep] = useState<"login" | "confirmation">("login");
 

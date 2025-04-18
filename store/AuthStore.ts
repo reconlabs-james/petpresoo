@@ -7,32 +7,35 @@ interface StoreState {
 }
 
 export const getToken = () => {
-  const token = localStorage.getItem("accessToken");
-  return token;
+  if (typeof window === "undefined") return null;
+  return localStorage.getItem("accessToken");
 };
 
 const setAccessToken = (token: string) => {
-  localStorage.setItem('accessToken', token)
-}
+  if (typeof window === "undefined") return;
+  localStorage.setItem('accessToken', token);
+};
 
 const setRefreshToken = (token: string) => {
-  localStorage.setItem('refreshToken', token)
-}
+  if (typeof window === "undefined") return;
+  localStorage.setItem('refreshToken', token);
+};
 
 export const removeToken = () => {
-  localStorage.removeItem('accessToken')
-  localStorage.removeItem('refreshToken')
-}
+  if (typeof window === "undefined") return;
+  localStorage.removeItem('accessToken');
+  localStorage.removeItem('refreshToken');
+};
 
 export const useAuthStore = create<StoreState>((set) => ({
-  isLoggedIn: getToken() ? true : false,
+  isLoggedIn: false, // SSR-safe 초기값
   storeLogin: (accessToken: string, refreshToken: string) => {
-    set({ isLoggedIn: true })
+    set({ isLoggedIn: true });
     setAccessToken(accessToken);
-    setRefreshToken(refreshToken)
+    setRefreshToken(refreshToken);
   },
   storeLogout: () => {
-    set({ isLoggedIn: false })
+    set({ isLoggedIn: false });
     removeToken();
   },
-}))
+}));
