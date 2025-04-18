@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "reconlabs-emoticon-454206",
+  "private_key_id": "45be750c061b24bfdd30e56942dec6934bf9327f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDy+sRxLrYwMecl\nAMdl0wnml0ZRH1qM3aC755keBGWkJFFCZ3/7o9yNfWy8edrm4GeInSr1wnVcrN/O\nCXc1XeARvnqSudNSxk+yQUfIoiGhJQXzDg3Zhwo4tsfA49Gwh1t4bqZ4owG9xIvS\nLzXgkcFRvpLrRcJ0/ni+UXuvP9Im6803cgDpnR8BgOgqG9GwgXK1cS7+QjsZLkrB\n6KHN87GqUxXDJcTqH38/wSwG43pKN80Dmxc+79o1nvDnx2DmjQvwisD1iICa2mWB\nd3XMR8QqTrSmN9QpCPY8FR7DPXBSyM2WB27H0bw6JDDK4MlzhR5123D0pHrjkPMK\n50WvgN8bAgMBAAECggEAPX6m+gg69u6iU/SjAovLXS9bDgvz5GPxGq1uTLELMmQ4\npqhANWVO3AZq3zat5rHTsjko1sMs5dQg3mn54ClOnN8K8ZiTOcdUA0bPTqFuBnUy\n0MV1TuEE/r6PxqtB9j4DsfK7Mhv7RFZ6lqr5JUluVmx3jZD9upNu5qgDuCJcYxnb\ndIly6jjmHZ06HdvXByjdhX+ccU4UspArRj5K6pVMjqbQyBL6qZJkyTS+QiOv1kVf\nqzrOrL/IZl0hW1NVSeAUm+rtf7LITJ/2jdREohehHTRhq8j0KbM2US61niSqt6r5\n5o7AJvObuJ/LtihWFgVfiMD7pdgtoJb9F481W5HMOQKBgQD+ne0Nr6/YEnnkiGBD\ndHeO6seRtySrxp6I9jJKhulahciVYckNgvD8aB8BrqgzvJ+77BwxFfc18Ot/zSMe\nPV4P646gTgufdUYh802JHp9k53GwAuBQKtqdZVIuOqUd0jZSrh1Ljxq9K5zD74v6\nLH5sH5o/t4MuBZZOIEV1m63XmQKBgQD0TKiG2iUVAu6pwcJlDFsv1pdXVMRF0otY\nZ4cQOlen8w+RnUYb/Lkg0WPNzYJrirpLCbyHiiFkuyaKC+Ylu+Bc2KBVbf+nYLwK\n+gNkvlKX2H2bBtY1Vm+aTBGqPZh8ijkrN+pnib+PRUwRUyGQcmWhvEZTY8PA948+\nBAZEkCUM0wKBgFUvNO4NR0F8/PbugXZP8ugHuHkR0tz9eHDOHYk9lbjJZZBExOUW\nV9W6aBVB/9g/VRmkJtJtTOXpEoERepxVX7Dn2DHdqpnQvIQDSH+FlUJHBIwkijOI\nAtgB2/rHeBKAD9idlAOBfyqm+q266RPr6uf1sr96gBLXn6/HsDVmvkSRAoGAB9jC\nfPpawI8EjW1MyiQYdbPlzodJepiloyRIIUxObnWPJXUwwEtgwt4W35BfRQcCrtBU\nPuI/6lVcioiRTtr2/OR0WeobkQu5XnzjSQQX8QqiFi2lCbeKBCG3W4l48V8bMPkt\nzT+OaJKoO9I4vMP/4a8Db0BAFF2fOzWz4dXjasMCgYEAhFgAqgDKE2UGMvEUtyDy\nkdoX3ow8En3kvc53sm6w8Sr10porCmf6dwgPuOANaJc+68/F7fgn7v/dftQe9eC7\nw+ytKpQRK3OV5gOgCetz8VKgYCSc3jfsSMVj21dkaNRwSKOV0zIuuwTjdQji3N5/\nVYr8k8yGSwSK37Fw2kQTeb4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "reconlabs-emoticon-dev@reconlabs-emoticon-454206.iam.gserviceaccount.com",
+  "client_id": "116171181452005437558",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/reconlabs-emoticon-dev%40reconlabs-emoticon-454206.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,9 @@
+{
+  "petName": "John Doe",
+  "petType": "Human",
+  "style_option": "Casual",
+  "features": "Athletic",
+  "email": "johndoe@example.com",
+  "is_subscribed": true,
+  "imageURL": "https://example.com/profile.jpg"
+}
