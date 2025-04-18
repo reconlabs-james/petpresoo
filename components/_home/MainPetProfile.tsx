@@ -1,12 +1,10 @@
-import Image from 'next/image';
-
 const MainPetProfile = () => {
   return (
     <section className="text-center mb-6 md:mb-8">
       <div className="flex flex-col items-center">
         <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-200 shadow-lg mb-2 sm:mb-3">
-          <Image
-            src="/asserts/덕선이 원본.pn"
+          <img
+            src="/asserts/덕선이 원본.png"
             alt="부시시한 덕선이"
             className="w-full h-full object-cover"
           />
