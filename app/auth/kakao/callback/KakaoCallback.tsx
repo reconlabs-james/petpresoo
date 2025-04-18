@@ -32,7 +32,7 @@ const KakaoCallback = () => {
         },
         (error) => {
           console.error(error);
-        }
+        },
       );
     } catch (err) {
       console.log(err);
