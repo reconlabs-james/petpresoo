@@ -1,5 +1,6 @@
 import { MainContent } from "@/components/_home/MainContent";
 import { MainImage } from "@/components/_home/MainImage";
+import MainPetProfile from "@/components/_home/MainPetProfile";
 import { Footer } from "@/components/common/footer";
 import Header from "@/components/common/header";
 import { EmojiGallery } from "@/components/emoji-gallery";
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <MainContent />
       <MainImage />
+      <MainPetProfile />
       {/* Description Section */}
       <section className="bg-gradient-to-b from-[#E2F3F1] to-[#E2F3F1] w-full py-8 md:py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
