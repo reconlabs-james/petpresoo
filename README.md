@@ -45,3 +45,7 @@ npm run build
 # 린트 실행
 npm run lint
 ```
+
+## Documentation
+- [작업 목록](tasks.md)
+- [변경 로그](change-log.md)
