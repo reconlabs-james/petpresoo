@@ -1,4 +1,5 @@
 import { EnhancedPhoto } from "@/components/_home/EnhancedPhoto";
+import { MainAutoSlidingGallery } from "@/components/_home/MainAutoSlidingGallery";
 import { MainContent } from "@/components/_home/MainContent";
 import { MainImage } from "@/components/_home/MainImage";
 import MainPetProfile from "@/components/_home/MainPetProfile";
@@ -19,6 +20,7 @@ export default function Home() {
       <MainImage />
       <MainPetProfile />
       <EnhancedPhoto />
+      <MainAutoSlidingGallery />
       {/* Description Section */}
       <section className="bg-gradient-to-b from-[#E2F3F1] to-[#E2F3F1] w-full py-8 md:py-24">
         <div className="max-w-4xl mx-auto px-4 text-center">
