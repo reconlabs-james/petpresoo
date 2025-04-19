@@ -1,3 +1,5 @@
+import { Footer } from '@/components/common/footer';
+import Header from '@/components/common/header';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -29,18 +31,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <head>
-        <link href="https://fonts.cdnfonts.com/css/cherry-bomb-one" rel="stylesheet" />
-      </head>
       <body
         className={`${inter.className} antialiased`}
       >
+        <Header />
         {children}
         {process.env.NODE_ENV === "production" && (
           <>
             <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!} />
           </>
         )}
+        <Footer />
       </body>
     </html>
   );

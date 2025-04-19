@@ -1,3 +1,4 @@
+'use client'
 
 import { useAuthStore } from "@/store/AuthStore";
 import { PawPrint, Sparkles } from "lucide-react";
@@ -10,6 +11,7 @@ const Header = () => {
   return (
     <>
       <header>
+        <link href="https://fonts.cdnfonts.com/css/cherry-bomb-one" rel="stylesheet" />
         <nav className="w-full bg-white shadow-sm py-4 sticky top-0 z-50">
           <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
             <div className="flex-1">
