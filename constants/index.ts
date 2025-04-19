@@ -71,7 +71,7 @@ export const features = [
   {
     title: "다양로운 스타일의 캐릭터 생성",
     description:
-        "당신의 반려동물을 다양한 스타일로 변환해보세요. 귀여운 캐릭터부터 유니크한 디자인까지 선택 가능합니다.",
+      "당신의 반려동물을 다양한 스타일로 변환해보세요. 귀여운 캐릭터부터 유니크한 디자인까지 선택 가능합니다.",
     image: "/asserts/DALL·E 2025-03-13 13.50.28.png",
     position: "top-left",
   },
@@ -84,14 +84,14 @@ export const features = [
   {
     title: "스티커, 티셔츠 등 굿즈에 활용",
     description:
-        "만들어진 이모티콘으로 나만의 굿즈를 제작할 수 있어요. 스티커, 티셔츠, 파우치 등 다양한 상품에 활용해보세요.",
+      "만들어진 이모티콘으로 나만의 굿즈를 제작할 수 있어요. 스티커, 티셔츠, 파우치 등 다양한 상품에 활용해보세요.",
     image: "/asserts/DALL·E 2025-03-13 14.11.28.png",
     position: "bottom-left",
   },
   {
     title: "각 종 SNS에 사용스러운 이모티콘으로 공유",
     description:
-        "카카오톡, 인스타그램, 페이스북 등 다양한 SNS에서 사용할 수 있는 이모티콘으로 친구들과 공유해보세요.",
+      "카카오톡, 인스타그램, 페이스북 등 다양한 SNS에서 사용할 수 있는 이모티콘으로 친구들과 공유해보세요.",
     image: '/asserts/DALL·E 2025-03-14 18.03.16.png',
     position: "bottom-right",
   },
@@ -110,3 +110,10 @@ export const intialformData = {
   features: "",
   email: "",
 }
+
+export const REST_API_KEY = process.env.KAKAO_CLIENT_ID;
+export const CLIENT_SECRET = process.env.KAKAO_CLIENT_SECRET;
+
+export const REDIRECT_URI = process.env.KAKAO_REDIRECT_URL;
+const CLIENT_ID = process.env.KAKAO_CLIENT_ID;
+export const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=code`;

@@ -1,11 +1,11 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
 import js from '@eslint/js';
-import globals from 'globals';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import globals from 'globals';
+import { dirname } from "path";
 import tseslint from 'typescript-eslint';
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -32,7 +32,7 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       indent: ['error', 2],
       curly: 'error',
-      'react-refresh/only-export-components': 'off', 
+      'react-refresh/only-export-components': 'off',
       'no-trailing-spaces': 'error',
       'brace-style': 'error',
       'no-multi-spaces': 'error',
@@ -44,7 +44,6 @@ export default tseslint.config(
       'keyword-spacing': ['error', { before: true, after: true }],
       'comma-spacing': ['error', { before: false, after: true }],
       'comma-style': ['error', 'last'],
-      'comma-dangle': ['error', 'always-multiline'],
       'space-in-parens': ['error', 'never'],
       'block-spacing': 'error',
       'array-bracket-spacing': ['error', 'never'],
